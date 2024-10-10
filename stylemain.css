@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Maven+Pro:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Maven+Pro:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+   --first: rgb(112, 92, 83);
+   --second: rgb(183, 183, 183);
+   --third: rgb(245, 245, 247);
+   --forth: rgb(237, 223, 224);
+
+}
+
+.container{
+    /*-----Continer-Start-----*/
+    display: flex;
+
+
+/*-----Continer-End-----*/
+}
+
+
+
+
+
+.sidebar{
+    /*-----sidebar-Start-----*/
+    background-color: var(--first);
+    width: 20vw;
+    font-family: Poppins;
+    height: 100vh;
+
+/*-----sidebar-End-----*/
+}
+
+.sidebar nav{
+    padding: 30px;
+}
+
+
+.sidebar nav li{
+    list-style: none;
+    padding: 30px 0;
+    font-size: 25px;
+
+}
+
+
+
+
+
+.main{
+    /*-----main-start-----*/
+    background-color: var(--second);
+    width: 80vw;
+
+
+/*-----sidebar-End-----*/
+}
+
+.infocontainer{
+    background-color: var(--third);
+    height: 70vh;
+    width:75vw;
+    margin: 80px auto;
+    justify-content: space-around;
+    display: flex;
+}
+
+.divpic img{ height: 70vh;
+
+
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello{
+    font-size: 30px;
+    font-family: "Maven Pro", sans-serif;
+}
+.name{font-size: 35px;
+/* font-weight: bold; */
+/* font-family: "Londrina Sketch", sans-serif;} */
+/* font-family: "Maven Pro", sans-serif; */
+font-family: "Outfit", sans-serif;}
+
+.about{font-size: 14px;
+font-family: "poppins, Londrina Sketch", sans-serif;}}
+.button{}
