@@ -1,79 +1,112 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Maven+Pro:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Maven+Pro:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 :root {
-   --first: rgb(112, 92, 83);
-   --second: rgb(183, 183, 183);
-   --third: rgb(245, 245, 247);
-   --forth: rgb(237, 223, 224);
+    --first: rgb(112, 92, 83);
+    --second: rgb(183, 183, 183);
+    --third: rgb(245, 245, 247);
+    --forth: rgb(237, 223, 224);
+    --fifth: rgb(24, 28, 20);
+    --sixth: rgb(60, 61, 55);
+    --seven: rgb(236, 223, 204);
+    --eight: rgb(105, 117, 101);
 
 }
 
-.container{
+.container {
     /*-----Continer-Start-----*/
     display: flex;
+    margin: 0;
 
 
-/*-----Continer-End-----*/
+}
+
+.icons {
+    padding: 15px;
+}
+
+
+.icons,
+img {
+    height: 30px;
+    border-radius: 30px;
+
 }
 
 
 
 
 
-.sidebar{
+.sidebar {
     /*-----sidebar-Start-----*/
-    background-color: var(--first);
+    background-color: var(--fifth);
     width: 20vw;
     font-family: Poppins;
-    height: 100vh;
+    height: 100vw;
 
-/*-----sidebar-End-----*/
+    /*-----sidebar-End-----*/
 }
 
-.sidebar nav{
-    padding: 30px;
+.sidebar nav {
+    padding: 20px;
 }
 
 
-.sidebar nav li{
+.sidebar nav li {
     list-style: none;
-    padding: 30px 0;
-    font-size: 25px;
+    padding: 20px 0;
+    font-size: 20px;
+
+
+
+
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: var(--eight);
+
+
+
+}
+
+.sidebar nav li a:hover{text-shadow: 0 0 5px #a8e6cf, 0 0 10px #a8e6cf, 0 0 15px #a8e6cf; /* Glowing effect */
+    color: #ffffff; /* Optional: change text color on hover */
 
 }
 
 
 
 
-
-.main{
+.main {
     /*-----main-start-----*/
-    background-color: var(--second);
+    background-color: var(--eight);
     width: 80vw;
 
 
-/*-----sidebar-End-----*/
+    /*-----sidebar-End-----*/
 }
 
-.infocontainer{
-    background-color: var(--third);
-    height: 70vh;
-    width:75vw;
+.infocontainer {
+    /* Start */
+    /* background-color: var(--third); */
     margin: 80px auto;
     justify-content: space-around;
     display: flex;
+
+    /* End */
 }
 
-.divpic img{ height: 70vh;
-
-
+.divpic img {
+    height: 70vh;
+ 
 }
 
 .devinfo {
@@ -82,16 +115,124 @@
     flex-direction: column;
 }
 
-.hello{
+.hello {
+    /* Start */
     font-size: 30px;
     font-family: "Maven Pro", sans-serif;
+    padding-left: 5px;
 }
-.name{font-size: 35px;
-/* font-weight: bold; */
-/* font-family: "Londrina Sketch", sans-serif;} */
-/* font-family: "Maven Pro", sans-serif; */
-font-family: "Outfit", sans-serif;}
 
-.about{font-size: 14px;
-font-family: "poppins, Londrina Sketch", sans-serif;}}
-.button{}
+.name {
+    font-size: 35px;
+
+    padding-left: 5px;
+    font-family: "Outfit", sans-serif;
+}
+
+.about {
+    font-size: 20px;
+    padding-left: 5px;
+    font-family: "poppins, Londrina Sketch", sans-serif;
+    margin-top: 5px;
+
+}
+
+
+
+.buttonc {
+    margin-top: 5px;
+
+}
+
+.buttonc button {
+    background-color: gray;
+    border: none;
+    border-radius: 35px;
+    padding: 12px;
+    margin: 8px;
+    /* font-size: 14px;
+    font-family: poppins;
+    font-weight: 500;
+    /* box-shadow: 5px 3px 5px rgb(9, 9, 9); */
+
+
+
+
+
+}
+
+button:hover {
+    color: aliceblue;
+    background-color: var(--sixth);
+}
+
+/*-----Continer-End-----*/
+
+
+/* ------------------------------------------------ */
+/* ----Blog Page Styling---- */
+.mainblog {
+    width: 80vw;
+    background-color: var(--third);
+    color: var(--sixth);
+}
+
+.contactform {
+    padding: 0 10px;
+}
+
+.contactform h1 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    padding: 60px 0px;
+    background-color: var();
+
+}
+
+form .mb-1,
+.mb-2,.mb-4,
+.mb-3.form-check {
+    padding: 10px;
+}
+
+label.form-label {
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+}
+
+
+input#clientEmail,
+input#exampleInputPassword1 {
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 8px 20px;
+
+}
+
+textarea#bigform{width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid ;
+    padding: 10px; /* Inner spacing */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    overflow: auto; /* Allow scrolling if needed */
+  
+}
+div#emailHelp {
+    font-family: sans-serif;
+    font-size: small;
+    color: darkgray;
+}
+
+
+button.btn.btn-primary {
+    MARGIN: 10PX;
+    width: 100PX;
+    padding: 4PX;
+    border-radius: 30px;
+    font-family: cursive;
+
+}
