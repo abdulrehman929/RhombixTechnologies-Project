@@ -89,8 +89,8 @@ img {
     background-color: var(--fifth);
     /* width: 20vw; */
     font-family: Poppins;
-    height: 100vw;
-    transition:transform 0.20ms ease-in;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out ;
     /*-----sidebar-End-----*/
 }
 
@@ -103,6 +103,7 @@ img {
     list-style: none;
     padding: 20px 0;
     font-size: 20px;
+    padding-top: 30px;
 
 
 
