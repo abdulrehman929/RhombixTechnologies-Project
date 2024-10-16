@@ -28,8 +28,48 @@
 
 }
 
+.power, .icons {
+    position: absolute;
+    bottom: 10px;  /* Adjust to move closer/farther from the bottom */
+    left: 10px;    /* Adjust to move closer/farther from the left */
+  }
+  
+  .icons img {
+    width: 30px; /* Adjust the size of icons */
+    margin-right: 5px;
+  }
+  
+  /* Media query for small screens */
+  @media only screen and (max-width: 768px) {
+    .power, .icons {
+      display: none;
+    }
+  }
+
+  #jake {
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    opacity: 1;   /* Element is visible */
+    visibility: visible;  /* Ensures element is visible */
+  }
+  
+  .hidden {
+    opacity: 0;   /* Element fades out */
+    visibility: visible;  /* Hides the element */
+  }
+  
+
+.power {
+   
+    color: whitesmoke;
+    padding-left: 7px;
+    font-weight: lighter;
+    font-size: small;
+    bottom: 55px;
+}
+
 .icons {
     padding: 15px;
+   
 }
 
 
@@ -47,10 +87,10 @@ img {
 .sidebar {
     /*-----sidebar-Start-----*/
     background-color: var(--fifth);
-    width: 20vw;
+    /* width: 20vw; */
     font-family: Poppins;
     height: 100vw;
-
+    transition:transform 0.20ms ease-in;
     /*-----sidebar-End-----*/
 }
 
@@ -88,11 +128,28 @@ img {
 .main {
     /*-----main-start-----*/
     background-color: var(--eight);
-    width: 80vw;
+    width: 100vw;
 
 
     /*-----sidebar-End-----*/
 }
+
+
+
+
+.meco {
+    display: flex;
+    padding-top: 5px;
+    position: absolute;
+    cursor: pointer;
+    left: 0px;
+    margin-bottom: 30px;
+}
+#cross{
+    margin-left: 111px;
+}
+
+
 
 .infocontainer {
     /* Start */
@@ -106,7 +163,9 @@ img {
 
 .divpic img {
     height: 70vh;
- 
+    /* border: 2px solid black;
+    border-radius: 50px;
+  */
 }
 
 .devinfo {
@@ -165,6 +224,34 @@ button:hover {
     color: aliceblue;
     background-color: var(--sixth);
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  .sidebarGo{
+    transform: translate(-214px, 0px);
+    position: absolute;
+    transition: 0.10ms ease-in;
+  }
+
+
+
+
+/* @media screen and (max-width: 985px){
+    
+        .sidebar {
+            transform: translate(-214px, 0px);
+            position: absolute;
+        }
+        .main{
+            width: 100vw;
+            padding: 0px;
+        }
+    } */
+
+
 
 /*-----Continer-End-----*/
 
