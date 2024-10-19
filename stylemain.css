@@ -129,7 +129,7 @@ img {
 .main {
     /*-----main-start-----*/
     background-color: var(--eight);
-    width: 100vh;
+    /* width: 100vh; */
 
 
     /*-----sidebar-End-----*/
@@ -146,12 +146,9 @@ img {
     left: 0px;
     margin-bottom: 30px;
 }
-#cross{
+.cross{
     margin-left: 111px;
     color: azure;
-}
-#menu img{ color: #ffffff;
-
 }
 
 
@@ -235,11 +232,11 @@ html {
   }
 
 
-  .sidebarGo{
+  /* .sidebarGo{
     transform: translate(-214px, 0px);
     position: absolute;
     transition: 0.10ms ease-in;
-  }
+  } */
 
 
 

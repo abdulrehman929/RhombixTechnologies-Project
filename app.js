@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Listen for scroll events
   window.addEventListener('scroll', function () {
     // Get the element by its ID
-    var jakeElement = document.getElementById('jake');
+    var jakeElement = document.querySelector('jake');
 
     // Check if the element exists
     if (jakeElement) {
@@ -19,21 +19,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// // Hide the element with class 'cross' initially
+// document.querySelector('.cross').style.display = 'none';
 
-// Hides the element with ID 'cross'
-document.getElementById('cross').style.display = 'none';
+// // Add an event listener to the element with class 'menu'
+// document.querySelector('.menu').addEventListener("click", () => {
+//   // Toggle the 'sidebarGo' class on the element with class 'sidebar'
+//   document.querySelector('.sidebar').classList.toggle('sidebarGo');
 
-document.getElementById('menu').addEventListener("click", () => {
-  document.querySelector('.sidebar').classList.toggle('sidebarGo');
-  
-  // Check if the 'sidebarGo' class is added
-  if (document.querySelector('sidebarGo').classList.contains('.sidebar')) {
-    // Show 'cross' and hide 'menu'
-    document.getElementById('menu').style.display = 'inline';
-    document.getElementById('cross').style.display = 'none';
-  } else {
-    // Show 'menu' and hide 'cross'
-    document.getElementById('cross').style.display = 'inline';
-    document.getElementById('menu').style.display = 'none';
-  }
-});
+//   if (document.querySelector('.sidebar').classList.contains('sidebarGo')) {
+//     // Show 'cross' and hide 'menu'
+//     document.querySelector('.menu').style.display = 'inline';
+//     document.querySelector('.cross').style.display = 'none';
+//   } 
+//   else {
+//     // Show 'menu' and hide 'cross'
+//     document.querySelector('.cross').style.display = 'inline';
+//     document.querySelector('.menu').style.display = 'none';
+//   }
+// });
+
+
