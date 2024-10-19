@@ -22,15 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Hides the element with ID 'cross'
 document.getElementById('cross').style.display = 'none';
+
 document.getElementById('menu').addEventListener("click", () => {
   document.querySelector('.sidebar').classList.toggle('sidebarGo');
-  if(document.querySelector('.sidebar').classList.contains('sidebarGo')){
-    document.getElementById('.cross').style.display =('inline')
-    document.getElementById('.menu').style.display =('none')
+  
+  // Check if the 'sidebarGo' class is added
+  if (document.querySelector('sidebarGo').classList.contains('.sidebar')) {
+    // Show 'cross' and hide 'menu'
+    document.getElementById('menu').style.display = 'inline';
+    document.getElementById('cross').style.display = 'none';
+  } else {
+    // Show 'menu' and hide 'cross'
+    document.getElementById('cross').style.display = 'inline';
+    document.getElementById('menu').style.display = 'none';
   }
-  else{
-    document.getElementById('.menu').style.display =('inline')
-    document.getElementById('.cross').style.display =('none')
-  }
-
-})
+});

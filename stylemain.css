@@ -129,7 +129,7 @@ img {
 .main {
     /*-----main-start-----*/
     background-color: var(--eight);
-    width: 100vw;
+    width: 100vh;
 
 
     /*-----sidebar-End-----*/
@@ -148,6 +148,10 @@ img {
 }
 #cross{
     margin-left: 111px;
+    color: azure;
+}
+#menu img{ color: #ffffff;
+
 }
 
 
