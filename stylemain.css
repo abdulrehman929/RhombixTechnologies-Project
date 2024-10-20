@@ -8,6 +8,11 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 :root {
     --first: rgb(112, 92, 83);
     --second: rgb(183, 183, 183);
@@ -20,56 +25,21 @@
 
 }
 
+
 .container {
-    /*-----Continer-Start-----*/
+
     display: flex;
     margin: 0;
 
 
 }
 
-.power, .icons {
-    position: absolute;
-    bottom: 10px;  /* Adjust to move closer/farther from the bottom */
-    left: 10px;    /* Adjust to move closer/farther from the left */
-  }
-  
-  .icons img {
-    width: 30px; /* Adjust the size of icons */
-    margin-right: 5px;
-  }
-  
-  /* Media query for small screens */
-  @media only screen and (max-width: 768px) {
-    .power, .icons {
-      display: none;
-    }
-  }
 
-  #jake {
-    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-    opacity: 1;   /* Element is visible */
-    visibility: visible;  /* Ensures element is visible */
-  }
-  
-  .hidden {
-    opacity: 0;   /* Element fades out */
-    visibility: visible;  /* Hides the element */
-  }
-  
 
-.power {
-   
-    color: whitesmoke;
-    padding-left: 7px;
-    font-weight: lighter;
-    font-size: small;
-    bottom: 55px;
-}
 
 .icons {
     padding: 15px;
-   
+
 }
 
 
@@ -89,8 +59,8 @@ img {
     background-color: var(--fifth);
     /* width: 20vw; */
     font-family: Poppins;
-    height: 100vh;
-    transition: transform 0.5s ease-in-out ;
+    height: 100;
+    transition: transform 0.5s ease-in-out;
     /*-----sidebar-End-----*/
 }
 
@@ -113,29 +83,28 @@ img {
 .sidebar nav li a {
     text-decoration: none;
     color: var(--eight);
+}
 
-
+.sidebar nav li a:hover {
+    text-shadow: 0 0 5px #a8e6cf, 0 0 10px #a8e6cf, 0 0 15px #a8e6cf;
+    color: #ffffff;
 
 }
 
-.sidebar nav li a:hover{text-shadow: 0 0 5px #a8e6cf, 0 0 10px #a8e6cf, 0 0 15px #a8e6cf; /* Glowing effect */
-    color: #ffffff; /* Optional: change text color on hover */
-
+.sidebarGo {
+    transform: translate(-214px, 0px);
+    position: absolute;
+    transition: 0.10ms ease-in;
 }
 
 
 
 
 .main {
-    /*-----main-start-----*/
     background-color: var(--eight);
-    /* width: 100vh; */
 
 
-    /*-----sidebar-End-----*/
 }
-
-
 
 
 .meco {
@@ -146,30 +115,32 @@ img {
     left: 0px;
     margin-bottom: 30px;
 }
-.cross{
-    margin-left: 111px;
-    color: azure;
+
+.cross {
+    margin-left: 136px;
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(95%) contrast(100%);}
+.menu{
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(95%) contrast(100%);
+
 }
 
 
-
+/* -------Info container Start---------- */
 .infocontainer {
-    /* Start */
-    /* background-color: var(--third); */
     margin: 80px auto;
     justify-content: space-around;
     display: flex;
 
-    /* End */
 }
-
+/* --divpic Start-- */
 .divpic img {
     height: 70vh;
-    /* border: 2px solid black;
-    border-radius: 50px;
-  */
 }
+/* --divpic End-- */
 
+
+
+/* -------Info Div Start---------- */
 .devinfo {
     display: flex;
     justify-content: center;
@@ -177,7 +148,7 @@ img {
 }
 
 .hello {
-    /* Start */
+   
     font-size: 30px;
     font-family: "Maven Pro", sans-serif;
     padding-left: 5px;
@@ -206,59 +177,131 @@ img {
 }
 
 .buttonc button {
-    background-color: gray;
+    background-color: rgb(223, 222, 222);
     border: none;
     border-radius: 35px;
     padding: 12px;
     margin: 8px;
-    /* font-size: 14px;
-    font-family: poppins;
-    font-weight: 500;
-    /* box-shadow: 5px 3px 5px rgb(9, 9, 9); */
-
-
-
-
-
-}
+    }
 
 button:hover {
     color: aliceblue;
     background-color: var(--sixth);
 }
+/* -------Info Div End---------- */
 
-html {
-    scroll-behavior: smooth;
-  }
-
-
-  /* .sidebarGo{
-    transform: translate(-214px, 0px);
-    position: absolute;
-    transition: 0.10ms ease-in;
-  } */
+/* ----------Info container Start---------- */
 
 
 
 
-/* @media screen and (max-width: 985px){
-    
-        .sidebar {
-            transform: translate(-214px, 0px);
-            position: absolute;
-        }
-        .main{
-            width: 100vw;
-            padding: 0px;
-        }
-    } */
+/* --------Centar Skills Class Start------- */
+.Sicon {
+    font-family: poppins;
+
+}
+
+.Sicon h1 {
+    background-color: var(--fifth);
+    color: var(--forth);
+    padding: 20px;
+}
+
+.Sicon p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.Sicon ul li {
+    list-style: none;
+    padding: 20Px;
+    display: flex;
+
+}
+
+.mainbar {
+    align-self: center;
+    width: 165px;
+    border: 2px solid rgb(82, 48, 48);
+    border-radius: 30px;
+    height: 10px;
+
+
+}
+
+.childbar {
+    background-color: var(--forth);
+    width: 160px;
+    height: 98%;
+    border-radius: 40px;
+    margin: 0.px;
+    margin-bottom: 1px;
+}
+
+
+.mainbar2 {
+    align-self: center;
+    width: 165px;
+    border: 2px solid rgb(2, 2, 2);
+    border-radius: 30px;
+    height: 10px;
+
+
+}
+
+.childbar2 {
+    background-color: var(--forth);
+    width: 133px;
+    height: 98%;
+    border-radius: 40px;
+    margin: 0.px;
+    margin-bottom: 1px;
+}
+
+.mainbar3 {
+    align-self: center;
+    width: 165px;
+    border: 2px solid rgb(82, 48, 48);
+    border-radius: 30px;
+    height: 10px;
+
+
+}
+
+.childbar3 {
+    background-color: var(--forth);
+    width: 120px;
+    height: 98%;
+    border-radius: 40px;
+    margin: 0.px;
+    margin-bottom: 1px;
+}
+
+.mainbar4 {
+    align-self: center;
+    width: 165px;
+    border: 2px solid rgb(82, 48, 48);
+    border-radius: 30px;
+    height: 10px;
+
+
+}
+
+.childbar4 {
+    background-color: var(--forth);
+    width: 100px;
+    height: 98%;
+    border-radius: 40px;
+    margin: 0.px;
+    margin-bottom: 1px;
+}
+
+/* --------Centar Skills Class end------- */
 
 
 
-/*-----Continer-End-----*/
 
 
-/* ------------------------------------------------ */
 /* ----Blog Page Styling---- */
 .mainblog {
     width: 80vw;
@@ -280,7 +323,8 @@ html {
 }
 
 form .mb-1,
-.mb-2,.mb-4,
+.mb-2,
+.mb-4,
 .mb-3.form-check {
     padding: 10px;
 }
@@ -300,16 +344,22 @@ input#exampleInputPassword1 {
 
 }
 
-textarea#bigform{width: 250px;
+textarea#bigform {
+    width: 250px;
     height: 50px;
     border-radius: 30px;
-    border: 2px solid ;
-    padding: 10px; /* Inner spacing */
-    font-size: 16px; /* Font size */
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
-    overflow: auto; /* Allow scrolling if needed */
-  
+    border: 2px solid;
+    padding: 10px;
+    /* Inner spacing */
+    font-size: 16px;
+    /* Font size */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color */
+    overflow: auto;
+    /* Allow scrolling if needed */
+
 }
+
 div#emailHelp {
     font-family: sans-serif;
     font-size: small;
